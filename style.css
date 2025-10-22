@@ -1,0 +1,118 @@
+
+:root {
+    --bg: #1a3433;   
+    --fg: #2066c9;  
+    }
+    * { box-sizing: border-box; }
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: #2b2b2b url('img.JPG') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--fg);
+    font-family: serif;
+    display: flex;
+    align-items: center;      
+    justify-content: center;  
+    min-height: 100svh;       
+} 
+
+.content {
+    opacity: 0;
+    animation: fade-in 2s ease-out 1.5s forwards;
+    text-align: center;
+    backdrop-filter: brightness(1.1);
+}
+
+h1 {
+    margin-top: 0; 
+    font-size: 10rem;
+    /*text-shadow: 0 0 10px var(--fg); */
+    animation: glow-breathe 3s ease-in-out infinite;
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.hamburger {
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    opacity: 0;
+    animation: fade-in 2s ease-out 1.5s forwards;
+}
+
+.hamburger span {
+    height: 4px;
+    background: var(--fg);
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* Menu */
+.nav-links {
+    list-style: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.nav-links li {
+    margin: 5px 0;
+}
+
+.nav-links a {
+    color: var(--fg);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.ball {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: var(--fg);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .content {
+        animation: none;
+        opacity: 1;
+  }
+}
+
+@keyframes glow-breathe {
+  0%, 100% {
+    text-shadow:
+      0 0 2px var(--fg);
+
+  }
+  50% {
+    text-shadow:
+      0 0 10px #436aa0;
+  }
+}
+
