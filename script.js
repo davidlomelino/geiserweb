@@ -7,26 +7,10 @@ hamburger.addEventListener('click', () => {
 });
 
 
-const ball = document.getElementById('ball');
+const cursor = document.getElementById('cursor');
 
-function showBall() {
-  const windowWidth = window.innerWidth;
-  const windowHeight = window.innerHeight;
+document.addEventListener('mousemove', (e) => {
+  cursor.style.left = `${e.clientX}px`;
+  cursor.style.top = `${e.clientY}px`;
+});
 
-  const ballSize = 5;
-
-  const randomX = Math.random() * (windowWidth - ballSize);
-  const randomY = Math.random() * (windowHeight - ballSize);
-
-  ball.style.left = `${randomX}px`;
-  ball.style.top = `${randomY}px`;
-
-
-  ball.style.opacity = '1';
-
-  setTimeout(() => {
-    ball.style.opacity = '0';
-  }, 1000);
-}
-
-setInterval(showBall, 5000);
