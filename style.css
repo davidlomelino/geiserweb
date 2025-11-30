@@ -154,3 +154,44 @@ h1 {
   }
 }
 
+/* MOBILANPASSNING */
+
+@media (max-width: 600px) {
+
+  body {
+    align-items: flex-start;  
+    justify-content: center;
+    padding: 20px;
+    cursor: auto;              
+  }
+
+  .content {
+    animation: none;           
+    opacity: 1;
+  }
+
+  h1 {
+    font-size: 3rem;         
+  }
+
+  .textbox {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .textboxcontact {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .menu {
+    top: 10px;
+    left: 10px;
+  }
+
+  #cursor {
+    display: none;          
+  }
+}
+
+
