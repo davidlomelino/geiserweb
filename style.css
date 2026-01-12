@@ -28,10 +28,9 @@ a.plain {
 
 }
 
-
 .content {
     opacity: 0;
-    animation: fade-in 2s ease-out 1.5s forwards;
+    animation: fade-in 1s ease-out 1s forwards;
     text-align: center;
     backdrop-filter: brightness(1.1);
 }
@@ -58,7 +57,7 @@ h1 {
     justify-content: space-between;
     cursor: pointer;
     opacity: 0;
-    animation: fade-in 2s ease-out 1.0s forwards;
+    animation: fade-in 1s ease-out 1s forwards;
     cursor: none;
 }
 
@@ -89,7 +88,13 @@ h1 {
   color: #417ccd;  
   text-align: center;        
   border-radius: 10px;      
-  margin: 20px auto;       
+  margin: 20px auto;     
+}
+
+.textboxcontact a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
 }
 
 
