@@ -1,3 +1,8 @@
+html, body {
+  height: 100%;
+}
+
+
 body {
   margin: 0;
   font-family: serif;
@@ -11,6 +16,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  min-height: 100vh;
 }
 
 
@@ -79,6 +85,7 @@ h1 {
 }
 .music-info {
   text-align: left;
+  min-width: 300px;
 }
 
 .textbox a {
@@ -90,6 +97,14 @@ h1 {
 .textbox a:hover {
   color: rgb(192, 221, 235); 
   text-decoration: underline;
+}
+
+.spotify-player {
+  width: 400px;
+  height: 352px;
+  border: 0;
+  border-radius: 12px;
+  max-width: 100%;
 }
 
 
@@ -135,6 +150,12 @@ h1 {
 
   .music-info {
     text-align: left;
+    min-width: auto;
+  }
+  
+  .spotify-player {
+    width: 100%;
+    height: 80px;  
   }
 }
 
