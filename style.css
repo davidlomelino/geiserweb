@@ -92,8 +92,49 @@ h1 {
   text-decoration: underline;
 }
 
-.dot {
-  padding: 0 5px;
-  color: rgb(192, 221, 235); 
+
+
+@media (max-width: 768px) {
+
+  /* Body */
+  body {
+    background-attachment: scroll; 
+  }
+
+  /* Rubrik */
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+
+  /* Navigation */
+  .nav ul {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .nav-right {
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+  /* Textbox */
+  .textbox {
+    padding: 20px;
+    margin: 20px;
+    height: auto;        
+    text-align: left;    
+  }
+
+  /* Music layout */
+  .musicbox {
+    flex-direction: column; 
+    height: auto;
+    padding-top: 20px;
+  }
+
+  .music-info {
+    text-align: left;
+  }
 }
 
