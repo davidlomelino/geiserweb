@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -8,8 +9,8 @@ body {
   font-family: serif;
   text-align: center;
 
-  color: rgb(111, 156, 201);
-  
+  color: rgb(99, 168, 214);
+
   background-color: #313131;
   background-image: url("img/GEISER.JPG");
   background-size: cover;
@@ -31,7 +32,7 @@ h1 {
 /* Navigation */
 
 .nav {
-  background-color: rgba(42, 41, 41, 0.99);
+  background-color: rgba(33, 43, 55, 0.99);
   padding: 1px;
 }
 
@@ -40,64 +41,63 @@ h1 {
   padding-left: 20px;
   margin: 10px;
   display: flex;
-  justify-content: flex-start; /* bättre än left */
+  justify-content: flex-start;
+  /* bättre än left */
   gap: 30px;
   align-items: center;
 }
 
 .nav-right {
   padding-right: 20px;
-  margin-left: auto;     
-  display: flex;          
+  margin-left: auto;
+  display: flex;
   gap: 20px;
 }
 
 /* Länkar */
 .nav a {
   text-decoration: none;
-  color: rgb(192, 221, 235);
+  color: rgb(99, 168, 214);
   font-weight: bold;
   font-size: 1rem;
 }
 
 .nav a:hover {
-  text-decoration: underline;
+  color: rgb(187, 207, 221);
 }
 
 .textbox {
   font-family: serif;
-  background-color: rgba(42, 41, 41, 0.99);
+  background-color: rgba(33, 43, 55, 0.99);
   padding: 250px;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   width: auto;
-  height: 300px;
+  height: 200px;
   border-radius: 8px;
   text-align: justify;
   min-width: 500px;
 }
 
 .musicbox {
-  padding-top: 90px;
-  height: 500px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  height: 200px;
   display: flex;
-  gap: 30px;
-  align-items: flex-start;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
 }
-.music-info {
-  text-align: left;
-  min-width: 300px;
-}
+
 
 .textbox a {
   font-family: inherit;
-  color: rgb(192, 221, 235);      
+  color: rgb(99, 168, 214);
   text-decoration: none;
 }
 
 .textbox a:hover {
-  color: rgb(192, 221, 235); 
-  text-decoration: underline;
+  color: rgb(187, 207, 221);
 }
 
 .spotify-player {
@@ -114,7 +114,7 @@ h1 {
 
   /* Body */
   body {
-    background-attachment: scroll; 
+    background-attachment: scroll;
   }
 
   /* Rubrik */
@@ -138,14 +138,14 @@ h1 {
   .textbox {
     padding: 20px;
     margin: 20px;
-    height: auto;        
-    text-align: left;   
-    min-width: auto; 
+    height: auto;
+    text-align: left;
+    min-width: auto;
   }
 
   /* Music layout */
   .musicbox {
-    flex-direction: column; 
+    flex-direction: column;
     height: auto;
     padding-top: 20px;
   }
@@ -154,10 +154,9 @@ h1 {
     text-align: left;
     min-width: auto;
   }
-  
+
   .spotify-player {
     width: 100%;
-    height: 80px;  
+    height: 80px;
   }
 }
-
