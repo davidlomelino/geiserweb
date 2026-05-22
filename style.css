@@ -66,9 +66,9 @@ h1 {
 
   }
 
-  .nav ul {
+  .nav a {
 
-    gap: 50px;
-
+    font-size: 2.0rem;
   }
+
 }
